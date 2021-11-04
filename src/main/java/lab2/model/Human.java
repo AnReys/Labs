@@ -1,0 +1,57 @@
+package lab2;
+
+import java.util.Objects;
+
+public class Human {
+    private String name;
+    private String surname;
+    private String dateOfBirth;
+
+    public void setName(String name){
+        this.name=name;
+    }
+
+    public String getName(){
+        return this.name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    @Override
+    public String toString(){
+        String s;
+        s="name:"+this.name;
+        s=s+"\nsurname:"+this.surname;
+        s=s+"\ndate of birth:"+this.dateOfBirth;
+        return s;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Human human = (Human) o;
+        return name.equals(human.name) &&
+                surname.equals(human.surname) &&
+                dateOfBirth.equals(human.dateOfBirth);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, surname, dateOfBirth);
+    }
+}
