@@ -3,7 +3,7 @@ package lab2.model;
 import java.util.List;
 import java.util.Objects;
 
-public class Fculty extends UniversityStructure{
+public class Faculty extends UniversityStructure{
     private List<Chair> chairs;
 
     public List<Chair> getChairs() {
@@ -18,8 +18,8 @@ public class Fculty extends UniversityStructure{
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Fculty fculty = (Fculty) o;
-        return Objects.equals(chairs, fculty.chairs);
+        Faculty faculty = (Faculty) o;
+        return Objects.equals(chairs, faculty.chairs);
     }
 
     @Override

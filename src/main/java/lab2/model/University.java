@@ -1,10 +1,10 @@
-package lab2;
+package lab2.model;
 
 import java.util.List;
 import java.util.Objects;
 
 public class University extends UniversityStructure{
-    private List<Fculty>facuties;
+    private List<Faculty>facuties;
 
     @Override
     public boolean equals(Object o) {
@@ -19,11 +19,11 @@ public class University extends UniversityStructure{
         return Objects.hash(facuties);
     }
 
-    public List<Fculty> getFacuties() {
+    public List<Faculty> getFacuties() {
         return facuties;
     }
 
-    public void setFacuties(List<Fculty> facuties) {
+    public void setFacuties(List<Faculty> facuties) {
         this.facuties = facuties;
     }
 

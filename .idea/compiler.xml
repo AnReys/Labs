@@ -9,5 +9,6 @@
         <module name="Idea_labs" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="7" />
   </component>
 </project>

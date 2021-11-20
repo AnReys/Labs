@@ -1,4 +1,4 @@
-package lab2;
+package lab2.model;
 
 public abstract class UniversityStructure {
     protected String title;
