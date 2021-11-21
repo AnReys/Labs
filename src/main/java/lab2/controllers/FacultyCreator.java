@@ -8,14 +8,14 @@ import java.util.List;
 import java.util.Random;
 
 public class FacultyCreator {
-    public static final int MIN_NUMBER_CHAIR_SIZE = 1;
-    public static final int MAX_NUMBER_CHAIR_SIZE = 2;
+    public static final int MIN_NUMBER_FACULTY_SIZE = 1;
+    public static final int MAX_NUMBER_FACULTY_SIZE = 2;
 
     public Faculty createFacultyRandomly() {
         Random random = new Random();
         HumanCreator humanCreator = new HumanCreator();
         ChairCreator chairCreator = new ChairCreator();
-        int numberOfChairs = random.nextInt(MIN_NUMBER_CHAIR_SIZE) + MAX_NUMBER_CHAIR_SIZE - MIN_NUMBER_CHAIR_SIZE;
+        int numberOfChairs = random.nextInt(MIN_NUMBER_FACULTY_SIZE) + MAX_NUMBER_FACULTY_SIZE - MIN_NUMBER_FACULTY_SIZE;
         Faculty faculty = new Faculty();
         faculty.setTitle(String.valueOf(random.nextInt()));
         faculty.setManager(humanCreator.createHumanRandomly());

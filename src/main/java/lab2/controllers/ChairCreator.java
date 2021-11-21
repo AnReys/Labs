@@ -20,6 +20,7 @@ public class ChairCreator {
         chair.setTitle(String.valueOf(random.nextInt()));
         chair.setManager(humanCreator.createHumanRandomly());
         List<Group> groups = new ArrayList<>();
+
         for (int i = 0; i < numberOfGroups; i++){
             groups.add(groupCreator.createGroupRandomly());
         }
