@@ -2,7 +2,6 @@ package lab2.controllers;
 
 import lab2.model.Human;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -20,6 +19,5 @@ public class HumanCreator {
         human.setDateOfBirth((DICTIONARY_DATE_OF_BIRTH.get(random.nextInt(DICTIONARY_DATE_OF_BIRTH.size()-1))));
 
         return human;
-
     }
 }

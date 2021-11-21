@@ -1,14 +1,13 @@
 package lab2.controllers;
 
 import lab2.model.Human;
-import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.Assert.*;
 
-class HumanCreatorTest {
+public class HumanCreatorTest {
 
-    @Test
-    void createHumanRandomly() {
+    @org.junit.Test
+    public void createHumanRandomly() {
         HumanCreator creator = new HumanCreator();
         Human human = creator.createHumanRandomly();
         assertTrue(HumanCreator.DICTIONARY_NAMES.contains(human.getName()));
