@@ -14,14 +14,14 @@ public class GroupCreator {
     public Group createGroupRandomly(){
         Random random = new Random();
         HumanCreator humanCreator = new HumanCreator();
-        int numberOfStudents = random.nextInt(MIN_NUMBER_GROUP_SIZE) + MAX_NUMBER_GROUP_SIZE - MIN_NUMBER_GROUP_SIZE;
+        int numberOfGroups = random.nextInt(MIN_NUMBER_GROUP_SIZE) + MAX_NUMBER_GROUP_SIZE - MIN_NUMBER_GROUP_SIZE;
         Group group = new Group();
         group.setTitle(String.valueOf(random.nextInt()));
         group.setManager(humanCreator.createHumanRandomly());
         List<Human> students = new ArrayList<>();
         students.add(group.getManager());
 
-        for (int i = 0; i < numberOfStudents; i++){
+        for (int i = 0; i < numberOfGroups; i++){
             students.add(humanCreator.createHumanRandomly());
         }
         group.setStudents(students);
