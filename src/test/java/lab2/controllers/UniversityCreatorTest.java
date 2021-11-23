@@ -12,5 +12,6 @@ public class UniversityCreatorTest {
         UniversityCreator creator = new UniversityCreator();
         University university = creator.createUniversityRandomly();
         assertTrue(UniversityCreator.MIN_NUMBER_UNIVERSITY_SIZE > 0);
+        assertTrue(UniversityCreator.MAX_NUMBER_UNIVERSITY_SIZE < 100);
     }
 }

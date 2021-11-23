@@ -11,5 +11,6 @@ public class GroupCreatorTest {
         GroupCreator creator = new GroupCreator();
         Group group = creator.createGroupRandomly();
         assertTrue(GroupCreator.MIN_NUMBER_GROUP_SIZE > 0);
+        assertTrue(GroupCreator.MAX_NUMBER_GROUP_SIZE < 100);
     }
 }

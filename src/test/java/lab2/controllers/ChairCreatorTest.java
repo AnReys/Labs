@@ -12,5 +12,6 @@ public class ChairCreatorTest {
         ChairCreator creator = new ChairCreator();
         Chair chair = creator.createChairRandomly();
         assertTrue(ChairCreator.MIN_NUMBER_CHAIR_SIZE > 0);
+        assertTrue(ChairCreator.MAX_NUMBER_CHAIR_SIZE < 100);
     }
 }

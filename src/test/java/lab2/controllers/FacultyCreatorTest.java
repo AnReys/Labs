@@ -12,5 +12,6 @@ public class FacultyCreatorTest {
         FacultyCreator creator = new FacultyCreator();
         Faculty faculty = creator.createFacultyRandomly();
         assertTrue(FacultyCreator.MIN_NUMBER_FACULTY_SIZE > 0);
+        assertTrue(FacultyCreator.MAX_NUMBER_FACULTY_SIZE < 100);
     }
 }
