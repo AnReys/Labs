@@ -2,6 +2,7 @@ package lab2.controllers;
 
 import lab2.model.Group;
 import org.junit.Test;
+
 import static org.junit.Assert.assertTrue;
 
 public class GroupCreatorTest {

@@ -11,7 +11,7 @@ public class GroupCreator {
     public static final int MIN_NUMBER_GROUP_SIZE = 15;
     public static final int MAX_NUMBER_GROUP_SIZE = 30;
 
-    public Group createGroupRandomly(){
+    public Group createGroupRandomly() {
         Random random = new Random();
         HumanCreator humanCreator = new HumanCreator();
         int numberOfGroups = random.nextInt(MIN_NUMBER_GROUP_SIZE) + MAX_NUMBER_GROUP_SIZE - MIN_NUMBER_GROUP_SIZE;
@@ -21,7 +21,7 @@ public class GroupCreator {
         List<Human> students = new ArrayList<>();
         students.add(group.getManager());
 
-        for (int i = 0; i < numberOfGroups; i++){
+        for (int i = 0; i < numberOfGroups; i++) {
             students.add(humanCreator.createHumanRandomly());
         }
         group.setStudents(students);

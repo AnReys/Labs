@@ -21,7 +21,7 @@ public class UniversityCreator {
         university.setManager(humanCreator.createHumanRandomly());
         List<Faculty> faculties = new ArrayList<>();
 
-        for (int i = 0; i <numberOfFaculties; i++){
+        for (int i = 0; i < numberOfFaculties; i++) {
             faculties.add(facultyCreator.createFacultyRandomly());
         }
         university.setFacuties(faculties);

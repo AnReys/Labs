@@ -11,7 +11,7 @@ public class ChairCreator {
     public static final int MIN_NUMBER_CHAIR_SIZE = 5;
     public static final int MAX_NUMBER_CHAIR_SIZE = 10;
 
-    public Chair createChairRandomly(){
+    public Chair createChairRandomly() {
         Random random = new Random();
         GroupCreator groupCreator = new GroupCreator();
         HumanCreator humanCreator = new HumanCreator();
@@ -21,7 +21,7 @@ public class ChairCreator {
         chair.setManager(humanCreator.createHumanRandomly());
         List<Group> groups = new ArrayList<>();
 
-        for (int i = 0; i < numberOfGroups; i++){
+        for (int i = 0; i < numberOfGroups; i++) {
             groups.add(groupCreator.createGroupRandomly());
         }
         chair.setGroups(groups);

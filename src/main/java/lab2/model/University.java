@@ -3,8 +3,8 @@ package lab2.model;
 import java.util.List;
 import java.util.Objects;
 
-public class University extends UniversityStructure{
-    private List<Faculty>facuties;
+public class University extends UniversityStructure {
+    private List<Faculty> facuties;
 
     @Override
     public boolean equals(Object o) {

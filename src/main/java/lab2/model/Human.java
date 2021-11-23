@@ -7,11 +7,11 @@ public class Human {
     private String surname;
     private String dateOfBirth;
 
-    public void setName(String name){
-        this.name=name;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getName(){
+    public String getName() {
         return this.name;
     }
 
@@ -32,11 +32,11 @@ public class Human {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         String s;
-        s="name:"+this.name;
-        s=s+"\nsurname:"+this.surname;
-        s=s+"\ndate of birth:"+this.dateOfBirth;
+        s = "name:" + this.name;
+        s = s + "\nsurname:" + this.surname;
+        s = s + "\ndate of birth:" + this.dateOfBirth;
         return s;
     }
 

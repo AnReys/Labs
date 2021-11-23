@@ -3,7 +3,7 @@ package lab2.model;
 import java.util.List;
 import java.util.Objects;
 
-public class Faculty extends UniversityStructure{
+public class Faculty extends UniversityStructure {
     private List<Chair> chairs;
 
     public List<Chair> getChairs() {

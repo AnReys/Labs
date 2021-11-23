@@ -21,7 +21,7 @@ public class FacultyCreator {
         faculty.setManager(humanCreator.createHumanRandomly());
         List<Chair> chairs = new ArrayList<>();
 
-        for (int i = 0; i < numberOfChairs; i++){
+        for (int i = 0; i < numberOfChairs; i++) {
             chairs.add(chairCreator.createChairRandomly());
         }
         faculty.setChairs(chairs);
